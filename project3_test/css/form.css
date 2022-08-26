@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.board{
+    margin-top: 3%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.board_form span { 
+    display: inline-block; 
+}
+.board_form .col1 { 
+    width: 15%; float: left 
+}
+.board_form .col2 { 
+    width: 85%; float: left 
+}
+.board_form li { 
+    height: 50px; 
+    padding: 12px; 
+}
+.board_form input { 
+    width: 100%; 
+    height: 25px; 
+}
+.board_form .area { 
+    height: 155px; 
+}
+.board_form textarea { 
+    width: 100%; 
+    height: 130px; 
+}
+.board_form .email input { 
+    width: 150px; 
+}
+.board_wrap{
+    width: 100%;
+    height: 100%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+.board_box{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-top: solid gray 1px;
+}
+.board_title{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding: 5% 0 5% 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.buttons { 
+    text-align: right; 
+    margin: 20px 20px 0 0; 
+}
+.buttons li { 
+    display: inline; 
+}
+.buttons button { 
+    width: 120px;
+    height: 30px;
+    vertical-align: middle;
+    margin: 2% 0 2% 0;
+    border: none;
+    cursor: pointer; 
+    color: white;
+    background-color: #0b0a0f;
+}
+
+/* view */
+.row1{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.row2{
+    margin-bottom: 2%;
+}
+.title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.info{
+    font-size: 0.8rem;
+    color: rgb(155, 155, 155);
+}
+.col3{
+    display: block;
+    margin-top: 2%;
+}
+
+.user_img{
+    margin-top: 5%;
+    max-width: 400px;
+    overflow: hidden;
+    margin-bottom: 5%;
+  }
+  .user_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

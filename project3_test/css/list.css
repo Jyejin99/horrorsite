@@ -1,0 +1,366 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@media(min-width:700px){
+    .board_wrap{
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+        padding-bottom: 200px;
+        background-color: rgb(245, 245, 245);
+    
+    }
+    .board_box{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-bottom: 5%;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .board_title{
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        padding: 5% 0 5% 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .board_list{
+        width: 100%;
+    }
+    .board_list li { 
+        padding: 10px 0; 
+        border-bottom: solid 1px #dadada; 
+    }
+    .span_title .col_list{
+        background-color: #0b0a0f;
+        color: white;
+    }
+    .board_list span { 
+        display: inline-block; 
+        text-align: center; 
+    }
+    .col_list{
+        margin: 0 2% 0 2%;
+    }
+    .col_list span{
+        vertical-align: middle;
+    }
+    .col_list .col1{    /* 번호 */
+        width: 5%;
+    }
+    .col_list .col2{    /* 게시일 */
+        width: 20%;
+    }
+    .col_list .col3{    /* 사진 */
+        width: 30%;
+    }
+    .col_list .col3 div{
+        margin: 0 auto;
+    }
+    .col_list .col3 div img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .col_list .col4{    /* 제목 */
+        width: 30%;
+    }
+    .col_list .col5{    /* 작성자 PC*/
+        width: 10%;
+    }
+    .col_list .col6{    /* 작성자 모바일 */
+        display: none;
+    }
+    .col3_img{
+        min-height: 50px;
+        width: 30%;
+    }
+    .img_icon img{
+        display: none;
+    }
+    .img_box1{
+        position: relative;
+        overflow: hidden;
+        max-width: 300px;
+        min-width: 100px;
+        height: 150px;
+    }
+    .img_box1 img{
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+        width: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .buttons { 
+        text-align: right; 
+        margin: 20px 20px 0 0; 
+    }
+    .buttons li { 
+        display: inline; 
+    }
+    .buttons button { 
+        width: 120px;
+        height: 30px;
+        vertical-align: middle;
+        margin: 2% 0 2% 0;
+        border: none;
+        cursor: pointer; 
+        color: white;
+        background-color: #0b0a0f;
+    }
+    
+    .page_num {	
+        text-align: center;	
+        margin-top: 20px; 
+    }
+    .page_num li { 
+        display: inline; 
+    }
+    
+    /* table = _story */
+    .card_wrap{
+        width: 100%;
+        max-width: 1280px;
+        margin: 2% auto;
+        height: 100%;
+    }
+    .card{
+        display: inline-block;  
+        margin: 0 1% 2% 0;
+        width: 300px;
+        height: 250px;
+        background-color: #0b0a0f;
+    }
+    .card:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+    
+    .card_body{
+        margin: 0 auto;
+    }
+    .img_box2{
+        margin: 5% auto;
+        width: 90%;
+        height: 150px;
+        background-color: red;
+    }
+    .img_box2 img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .img_story{
+        text-align: center;
+    }
+    .img_story .card_title{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 2%;
+        color: white;
+    }
+    .img_story small{
+        font-size: 0.8rem;
+        color: rgb(155, 155, 155);
+    }
+
+}
+
+@media(max-width:700px){
+    .board_wrap{
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+        padding-bottom: 200px;
+        background-color: rgb(245, 245, 245);
+    
+    }
+    .board_box{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-bottom: 5%;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .board_title{
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        padding: 10% 0 10% 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .board_list{
+        width: 100%;
+    }
+    .board_list li { 
+        padding: 10px 0; 
+        border-bottom: solid 1px #dadada; 
+    }
+    .span_title .col_list{
+        background-color: #0b0a0f;
+        color: white;
+    }
+    .board_list span { 
+        display: inline-block; 
+    }
+    .col_list span{
+        vertical-align: middle;
+    }
+    .col_list .col1{
+        width: 10%;
+        text-align: center; 
+    }
+    .col_list .col2{
+        display: none;
+    }
+    .col_list .col3{
+        display: none;
+    }
+    .col_list .col4{
+        width: 50%;
+        margin-left: 2%;
+    }
+    .col_list .col5{
+        width: 20%;
+        text-align: center; 
+    }
+    .col_list .col6{
+        width: 100%;
+        text-align: left;
+        margin: 5% 0 0 5%;
+        color: gray;
+    }
+    .col3_img{
+        min-height: 50px;
+        width: 30%;
+    }
+    .img_box1{
+        display: none;
+    }
+    .img_icon{
+        width: 5%;
+    }
+    
+    .buttons { 
+        text-align: right; 
+        margin: 20px 20px 0 0; 
+    }
+    .buttons li { 
+        display: inline; 
+    }
+    .buttons button { 
+        width: 120px;
+        height: 30px;
+        vertical-align: middle;
+        margin: 2% 0 2% 0;
+        border: none;
+        cursor: pointer; 
+        color: white;
+        background-color: #0b0a0f;
+    }
+    
+    .page_num {	
+        text-align: center;	
+        margin-top: 20px; 
+    }
+    .page_num li { 
+        display: inline; 
+    }
+    
+    /* table = _story */
+    .card_wrap{
+        width: 100%;
+        max-width: 1280px;
+        margin: 2% auto;
+        height: 100%;
+    }
+    .card{
+        display: inline-block;  
+        margin: 0 1% 2% 0;
+        width: 300px;
+        height: 250px;
+        background-color: #0b0a0f;
+    }
+    .card:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+    
+    .card_body{
+        margin: 0 auto;
+    }
+    .img_box2{
+        margin: 5% auto;
+        width: 90%;
+        height: 150px;
+        background-color: red;
+    }
+    .img_box2 img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .img_story{
+        text-align: center;
+    }
+    .img_story .card_title{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 2%;
+        color: white;
+    }
+    .img_story small{
+        font-size: 0.8rem;
+        color: rgb(155, 155, 155);
+    }
+}
